@@ -12,8 +12,9 @@ import * as $$0 from "./islands/LiveControls.tsx";
 import * as $$$0 from "./sections/GetStarted.tsx";
 import * as $$$1 from "./sections/Head.tsx";
 import * as $$$2 from "./sections/Informacoes.tsx";
-import * as $$$3 from "./sections/Markdown.tsx";
-import * as $$$4 from "./sections/QuillText.tsx";
+import * as $$$3 from "./sections/Informacoes2.tsx";
+import * as $$$4 from "./sections/Markdown.tsx";
+import * as $$$5 from "./sections/QuillText.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -28,8 +29,9 @@ const manifest: DecoManifest = {
     "./sections/GetStarted.tsx": $$$0,
     "./sections/Head.tsx": $$$1,
     "./sections/Informacoes.tsx": $$$2,
-    "./sections/Markdown.tsx": $$$3,
-    "./sections/QuillText.tsx": $$$4,
+    "./sections/Informacoes2.tsx": $$$3,
+    "./sections/Markdown.tsx": $$$4,
+    "./sections/QuillText.tsx": $$$5,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -102,6 +104,22 @@ const manifest: DecoManifest = {
     "./sections/Informacoes.tsx": {
       "inputSchema": {
         "title": " Informacoes",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+        },
+        "required": [
+          "title",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Informacoes2.tsx": {
+      "inputSchema": {
+        "title": " Informacoes2",
         "type": "object",
         "properties": {
           "title": {
